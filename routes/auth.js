@@ -11,7 +11,7 @@ const AuthController = require('../controllers/auth');
  *   post:
  *     summary: Authenticates the user
  *     tags:
- *       - User Routes
+ *       - Authorization Routes
  *     description: Authenticate the user
  *     produces:
  *       - application/json
