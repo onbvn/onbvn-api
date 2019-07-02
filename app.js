@@ -23,8 +23,9 @@ const swaggerDefinition = {
         description: 'The node.js API for OnBVN social media application'
     },
     host: 'localhost:3000',
+    schemes: ["https"],
     basePath: '',
-    validatorUrl: undefined
+    validatorUrl: false
 };
 
 const options = {
