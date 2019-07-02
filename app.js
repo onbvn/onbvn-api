@@ -10,7 +10,7 @@ const authRouter = require('./routes/auth');
 
 mongoose.set("useCreateIndex", true);
 mongoose
-    .connect('mongodb://localhost:27017/onbvn', { useNewUrlParser: true })
+    .connect(process.env["MONGOLAB_MAUVE_URI"] || 'mongodb://localhost:27017/onbvn', { useNewUrlParser: true })
     .catch( reason => {
         console.log('Failed to connect: ', reason);
     });
