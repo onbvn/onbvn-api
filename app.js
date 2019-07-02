@@ -47,7 +47,6 @@ app.use('/api/v1/auth/', authRouter);
 
 app.get('/swagger', (req, res) => {
     res.setHeader('Content-Type', 'application/json');
-    res.setHeader('Access-Control-Allow-Origin', '*');
     res.send(swaggerSpec)
 });
 
