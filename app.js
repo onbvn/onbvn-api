@@ -47,6 +47,7 @@ app.use('/api/v1/users/', usersRouter);
 app.use('/api/v1/auth/', authRouter);
 
 app.get('/swagger', (req, res) => {
+    res.setHeader('Access-Control-Allow-*', '*');
     res.setHeader('Content-Type', 'application/json');
     res.send(swaggerSpec)
 });
