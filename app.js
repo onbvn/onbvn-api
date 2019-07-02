@@ -22,7 +22,7 @@ const swaggerDefinition = {
         version: '1.0.0',
         description: 'The node.js API for OnBVN social media application'
     },
-    host: process.env.NODE_ENV === 'staging' ? 'on-bvn-backend.herokuapp.com': 'localhost:3000',
+    host: process.env["NODE_ENV"] == 'staging' ? 'on-bvn-backend.herokuapp.com': 'localhost:3000',
     scheme: 'https',
     basePath: ''
 };
