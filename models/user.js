@@ -21,6 +21,10 @@ const bcrypt = require('bcrypt');
  *            type: string
  *          aadharUID:
  *            type: string
+ *          aadharFrontImage:
+ *            type: string
+ *          aadharBackImage:
+ *            type: string
  */
 const UserSchema = new Schema({
     name: {
@@ -51,6 +55,12 @@ const UserSchema = new Schema({
         type: String,
         required: true,
         unique: true
+    },
+    aadharFrontImage: {
+        type: String
+    },
+    aadharBackImage: {
+        type: String
     }
 });
 

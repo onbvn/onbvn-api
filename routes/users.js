@@ -58,8 +58,16 @@ router.get('/', userController.getAll);
  *         description: The Aadhar ID of the user
  *         required: true
  *         in: formData
- *       - name: Password
+ *       - name: password
  *         description: Password of the user which will be used to login
+ *         required: true
+ *         in: formData
+ *       - name: aadharFrontImage
+ *         description: URL of the front image of aadhar
+ *         required: true
+ *         in: formData
+ *       - name: aadharBackImage
+ *         description: URL of the back image of aadhar
  *         required: true
  *         in: formData
  *     responses:
@@ -124,8 +132,14 @@ router.get('/:userID', userController.findUser);
  *       - name: AadharUID
  *         description: The Aadhar ID of the user
  *         in: formData
- *       - name: Password
+ *       - name: password
  *         description: Password of the user which will be used to login
+ *         in: formData
+ *       - name: aadharFrontImage
+ *         description: URL of the front image of aadhar card
+ *         in: formData
+ *       - name: aadharBackImage
+ *         description: URL of the back image of aadhar card
  *         in: formData
  *     produces:
  *       - application/json

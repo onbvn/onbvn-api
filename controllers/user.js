@@ -8,7 +8,9 @@ const create = async (req, res) => {
         email,
         password,
         profilePicture,
-        aadharUID
+        aadharUID,
+        aadharFrontImage,
+        aadharBackImage
     } = req.body;
     try {
         const user = new User({
@@ -18,7 +20,9 @@ const create = async (req, res) => {
             email: email,
             password: password,
             profilePicture: profilePicture,
-            aadharUID: aadharUID
+            aadharUID: aadharUID,
+            aadharFrontImage: aadharFrontImage,
+            aadharBackImage: aadharBackImage
         });
         await user.save();
         return res.status(201).json({
