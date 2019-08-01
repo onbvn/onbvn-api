@@ -19,7 +19,6 @@ const create = async (req, res) => {
             mobileNumber: mobileNumber,
             email: email,
             password: password,
-            profilePicture: profilePicture,
             aadharUID: aadharUID,
             aadharFrontImage: aadharFrontImage,
             aadharBackImage: aadharBackImage
@@ -30,8 +29,7 @@ const create = async (req, res) => {
             name: user.name,
             username: user.username,
             mobileNumber: user.mobileNumber,
-            email: user.email,
-            profilePicture: user.profilePicture
+            email: user.email
         });
     } catch (error) {
         console.log(error);

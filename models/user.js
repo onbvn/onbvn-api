@@ -49,7 +49,8 @@ const UserSchema = new Schema({
         required: true
     },
     profilePicture: {
-        type: String
+        type: String,
+        default: ''
     },
     aadharUID: {
         type: String,

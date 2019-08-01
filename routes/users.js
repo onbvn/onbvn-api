@@ -52,7 +52,6 @@ router.get('/', userController.getAll);
  *         in: formData
  *       - name: profilePicture
  *         description: The profile picture of the user ( will be a URL)
- *         required: true
  *         in: formData
  *       - name: aadharUID
  *         description: The Aadhar ID of the user
