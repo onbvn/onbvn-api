@@ -7,7 +7,6 @@ const create = async (req, res) => {
         mobileNumber,
         email,
         password,
-        profilePicture,
         aadharUID,
         aadharFrontImage,
         aadharBackImage
