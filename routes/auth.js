@@ -16,7 +16,7 @@ const AuthController = require('../controllers/auth');
  *     produces:
  *       - application/json
  *     parameters:
- *       - username: username
+ *       - name: username
  *         description: The username of the user
  *         required: true
  *         in: formData
