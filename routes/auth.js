@@ -20,7 +20,7 @@ const AuthController = require('../controllers/auth');
  *         description: The username of the user
  *         required: true
  *         in: formData
- *       - name: Password
+ *       - name: password
  *         description: Password of the user
  *         required: true
  *         in: formData
